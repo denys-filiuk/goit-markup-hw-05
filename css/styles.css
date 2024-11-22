@@ -178,6 +178,21 @@ header .container {
   background-color: #404bbf;
 }
 /* Benefits styles */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
@@ -632,15 +647,24 @@ header .container {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
 }
 
 .checkmark-svg {
-  fill: none;
 }
 
 .modal-form-checkbox:focus .checkmark-svg {
   fill: #f4f4fd;
   background-color: #404bbf;
+}
+
+input[type='checkbox']:checked + .modal-form-label .checkmark-bkd {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 
 .modal-form-link {
