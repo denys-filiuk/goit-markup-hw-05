@@ -587,33 +587,29 @@
           </ul>
         </div>
         <div class="footer-subscribe">
+          <p class="footer-subscribe-text">Subscribe</p>
           <form class="footer-subscribe-form">
-            <label class="footer-subscribe-label" for="subscribe"
-              >Subscribe</label
-            >
+            <label class="footer-subscribe-label" for="subscribe"></label>
             <input
               class="footer-subscribe-input"
               type="email"
               name="subscribe"
               placeholder="E-mail"
             />
-          </form>
-
-          <div class="">
             <button class="button footer-button">
               Subscribe
               <svg class="footer-frame-svg" width="24" height="24">
                 <use href="./images/icons.svg#frame"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
 
     <div class="backdrop">
       <div class="modal">
-        <button class="modal-btn" type="button">
+        <button class="modal-btn-close" type="button">
           <svg class="modal-btn-svg" width="8px" height="8px">
             <use href="./images/icons.svg#close"></use>
           </svg>
@@ -621,9 +617,14 @@
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-form-field">
-            <label class="modal-form-label" for="name">Name</label>
+            <label class="modal-form-label" for="user-name">Name</label>
             <div class="modal-form-wrapper">
-              <input class="modal-form-input" type="text" id="name" />
+              <input
+                class="modal-form-input"
+                name="user-name"
+                type="text"
+                id="user-name"
+              />
               <svg class="modal-form-icon" width="18" height="18">
                 <use href="./images/icons.svg#person"></use>
               </svg>
