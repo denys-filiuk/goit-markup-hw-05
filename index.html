@@ -589,13 +589,14 @@
         <div class="footer-subscribe">
           <p class="footer-subscribe-text">Subscribe</p>
           <form class="footer-subscribe-form">
-            <label class="footer-subscribe-label" for="subscribe"></label>
-            <input
-              class="footer-subscribe-input"
-              type="email"
-              name="subscribe"
-              placeholder="E-mail"
-            />
+            <label class="footer-subscribe-label" for="subscribe">
+              <input
+                class="footer-subscribe-input"
+                type="email"
+                name="subscribe"
+                placeholder="E-mail"
+              />
+            </label>
             <button class="button footer-button">
               Subscribe
               <svg class="footer-frame-svg" width="24" height="24">
@@ -607,10 +608,10 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn-close" type="button">
-          <svg class="modal-btn-svg" width="8px" height="8px">
+          <svg class="modal-btn-svg" width="8" height="8">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
@@ -625,40 +626,52 @@
                 type="text"
                 id="user-name"
               />
-              <svg class="modal-form-icon" width="18" height="18">
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#person"></use>
               </svg>
             </div>
-            <label class="modal-form-label" for="phone">Phone</label>
+          </div>
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-phone">Phone</label>
             <div class="modal-form-wrapper">
-              <input class="modal-form-input" type="tel" id="phone" />
-              <svg class="modal-form-icon" width="18" height="18">
+              <input class="modal-form-input" type="tel" id="user-phone" />
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
             </div>
-            <label class="modal-form-label" for="email">Email</label>
+          </div>
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-email">Email</label>
             <div class="modal-form-wrapper">
-              <input class="modal-form-input" type="email" id="email" />
-              <svg class="modal-form-icon" width="18" height="18">
+              <input class="modal-form-input" type="email" id="user-email" />
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#email"></use>
               </svg>
             </div>
-            <label class="modal-form-label" for="comment">Comment</label>
-            <div class="modal-form-wrapper">
-              <input
-                class="modal-form-input modal-form-comment"
-                type="textarea"
-                id="comment"
-                placeholder="Text input"
-              />
-            </div>
-
-            <input class="modal-form-input" type="checkbox" id="checkbox" />
-            <label class="modal-form-label" for="checkbox"
-              >I accept the terms and conditions of the Privacy Policy</label
-            >
-            <button class="button" type="submit">Send</button>
           </div>
+          <div class="modal-form-wrapper">
+            <label class="modal-form-label" for="comment">Comment</label>
+            <textarea
+              class="modal-form-textarea modal-form-input"
+              id="comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="modal-checkbox-wrapper">
+            <input class="modal-form-checkbox" type="checkbox" id="checkbox">
+              <span class="checkmark-bkd">
+                <svg class="checkmark-svg" width="10" height="8">
+                  <use href="./images/icons.svg#checkmark"></use>
+                </svg>
+              </span>
+            </input>
+            <label class="modal-form-label" for="checkbox"
+              >I accept the terms and conditions of the
+              <a class="modal-form-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="button" type="submit">Send</button>
         </form>
       </div>
     </div>
