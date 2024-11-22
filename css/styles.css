@@ -156,7 +156,7 @@ header .container {
   line-height: 1.07;
   letter-spacing: 0.02em;
 }
-.solution-button {
+.button {
   margin: 0 auto;
   display: block;
   padding: 16px 32px;
@@ -398,6 +398,9 @@ header .container {
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
+.footer-socials {
+  margin-right: 80px;
+}
 .footer-social-items {
   gap: 16px;
 }
@@ -419,4 +422,105 @@ header .container {
   line-height: 150%;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+}
+.footer-button {
+  position: relative;
+  min-width: 165px;
+  height: 40px;
+  padding: 8px 64px 8px 24px;
+}
+.footer-subscribe {
+  display: flex;
+  gap: 24px;
+}
+.footer-subscribe-form {
+}
+.footer-subscribe-label {
+  color: #fff;
+  display: block;
+  margin-bottom: 16px;
+}
+.footer-subscribe-input {
+  display: block;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.footer-frame-svg {
+  position: absolute;
+  top: 8px;
+  right: 24px;
+}
+
+/* Modal styles */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46%, 47%, 66%, 40%);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translatex(-50%) translatey(-50%);
+  width: 408px;
+  min-height: 584px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+.modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.modal-text {
+  margin: 72px 24px 16px 24px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.modal-form {
+}
+.modal-form-field {
+}
+.modal-form-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+}
+.modal-form-wrapper {
+  margin-bottom: 8px;
+}
+.modal-form-input {
+  padding: 8px 16px;
+  border: 1px solid #2e2f42;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  outline: transparent;
+}
+.modal-form-icon {
+}
+.modal-form-comment {
+  min-height: 120px;
+}
+.modal-submit {
+  margin-bottom: 24px;
 }
