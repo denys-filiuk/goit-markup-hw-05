@@ -574,6 +574,10 @@ header .container {
 .modal-form-field {
   margin-bottom: 8px;
 }
+
+.modal-comment {
+  margin-bottom: 16px;
+}
 .modal-form-label {
   display: block;
   margin-bottom: 4px;
